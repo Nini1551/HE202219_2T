@@ -1,0 +1,14 @@
+AgeCalculatorForm:
+    birthyear_input: birthyear
+    age_label: age
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            text: 'Année de naissance'
+        TextInput:
+            id: birthyear
+            multiline: False
+            on_text_validate: root._compute(self)
+    Label:
+        id: age

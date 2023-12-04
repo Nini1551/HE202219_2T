@@ -1,0 +1,9 @@
+#:import App kivy.app.App
+
+AnchorLayout:
+    anchor_x: 'center'
+    anchor_y: 'center'
+    Button:
+        text: 'Quit'
+        size_hint: (0.7,0.3)
+        on_press: App.get_running_app()._quit(self)
